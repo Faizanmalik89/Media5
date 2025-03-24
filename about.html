@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Hub - About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html" class="flex-shrink-0 flex items-center">
+          <i class="fas fa-brain text-primary"></i>
+          <span>Knowledge Hub</span>
+        </a>
+        
+        <!-- Desktop Navigation -->
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="blogs.html">Blogs</a>
+          <a href="videos.html">Videos</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      
+      <!-- Search Bar -->
+      <div class="navbar-search">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1>About Knowledge Hub</h1>
+      <p>Learn more about our mission and the team behind Knowledge Hub</p>
+    </div>
+
+    <div class="about-section">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=400&q=80" alt="Knowledge Hub Team" class="about-image">
+      
+      <div class="about-content">
+        <h2>Our Mission</h2>
+        <p>Knowledge Hub was founded in 2020 with a simple mission: to make high-quality educational content accessible to everyone. We believe that knowledge should be shared freely and that learning is a lifelong journey. Our platform offers curated blogs and videos on a wide range of topics from technology and health to personal development and finance.</p>
+        
+        <p>We work with experts across various fields to ensure that our content is accurate, up-to-date, and genuinely helpful to our audience. Whether you're looking to develop new skills, stay informed about the latest trends, or simply expand your horizons, Knowledge Hub is your trusted companion on your learning journey.</p>
+        
+        <h2>Our Values</h2>
+        <p>At Knowledge Hub, we are guided by the following core values:</p>
+        <ul>
+          <li><strong>Accessibility:</strong> We believe knowledge should be available to everyone, regardless of their background or circumstances.</li>
+          <li><strong>Accuracy:</strong> We are committed to providing well-researched, factual information that our audience can trust.</li>
+          <li><strong>Clarity:</strong> We strive to explain complex topics in clear, concise language that is easy to understand.</li>
+          <li><strong>Curiosity:</strong> We encourage curiosity and lifelong learning through engaging, thought-provoking content.</li>
+          <li><strong>Community:</strong> We foster a supportive community where ideas can be shared and discussed respectfully.</li>
+        </ul>
+        
+        <h2>Meet Our Team</h2>
+        <div class="team-grid">
+          <!-- Team Member 1 -->
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" class="team-member-image">
+            <h3 class="team-member-name">Sarah Johnson</h3>
+            <p class="team-member-role">Founder & CEO</p>
+            <p class="team-member-bio">Sarah has over 15 years of experience in educational technology. She founded Knowledge Hub to democratize access to quality learning resources.</p>
+          </div>
+          
+          <!-- Team Member 2 -->
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Michael Chen" class="team-member-image">
+            <h3 class="team-member-name">Michael Chen</h3>
+            <p class="team-member-role">Content Director</p>
+            <p class="team-member-bio">Michael oversees our content strategy and works with our network of experts to deliver valuable, insightful articles and videos.</p>
+          </div>
+          
+          <!-- Team Member 3 -->
+          <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Priya Patel" class="team-member-image">
+            <h3 class="team-member-name">Priya Patel</h3>
+            <p class="team-member-role">Tech Lead</p>
+            <p class="team-member-bio">Priya leads our technical development, ensuring that Knowledge Hub provides a seamless, accessible experience across all devices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Subscription -->
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+        <p class="newsletter-text">Stay updated with our latest blogs, videos, and educational content.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input" required>
+          <button type="submit" class="newsletter-button">
+            Subscribe
+          </button>
+        </form>
+        <p class="newsletter-privacy">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About -->
+        <div>
+          <h3 class="footer-title">About Knowledge Hub</h3>
+          <p class="footer-text">We provide educational content through blogs and videos to help you learn new skills and stay updated with the latest trends.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Categories -->
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Productivity</a></li>
+            <li><a href="#">Finance</a></li>
+            <li><a href="#">Lifestyle</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact -->
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Knowledge Street, Learning City, ED 12345</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@knowledgehub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+1 (123) 456-7890</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Knowledge Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

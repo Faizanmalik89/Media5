@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Hub - Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <i class="fas fa-newspaper"></i>
+          <span>Content Hub</span>
+        </a>
+      </div>
+      
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="videos.html">Videos</a>
+        <a href="signup.html" class="active">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="signup.html" class="active">Sign Up</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </nav>
+
+  <!-- Sign Up Section -->
+  <section class="py-16">
+    <div class="container">
+      <div class="form-container">
+        <h2 class="form-title">Create an Account</h2>
+        
+        <form class="signup-form">
+          <div class="form-group">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" class="form-input" placeholder="Choose a username" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" id="password" name="password" class="form-input" placeholder="Create a password" minlength="8" required>
+            <p style="font-size: 0.85rem; color: var(--light-text); margin-top: 0.5rem;">Password must be at least 8 characters long</p>
+          </div>
+          
+          <div class="form-group">
+            <label for="confirm-password" class="form-label">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" class="form-input" placeholder="Confirm your password" required>
+          </div>
+          
+          <div class="form-group" style="display: flex; align-items: flex-start; gap: 0.75rem; margin-top: 1.5rem;">
+            <input type="checkbox" id="terms" name="terms" style="margin-top: 0.25rem;" required>
+            <label for="terms" style="font-size: 0.9rem;">I agree to the <a href="terms.html" style="color: var(--primary-color); text-decoration: underline;">Terms of Service</a> and <a href="terms.html" style="color: var(--primary-color); text-decoration: underline;">Privacy Policy</a></label>
+          </div>
+          
+          <button type="submit" class="form-submit">
+            Create Account
+          </button>
+        </form>
+        
+        <div class="form-footer">
+          Already have an account? <a href="login.html">Login here</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title">About Content Hub</h3>
+          <p class="footer-text">A community-driven platform for discovering and sharing high-quality blogs and videos across various topics of interest.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Entertainment</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Content Street, Knowledge City, 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@contenthub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Content Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Privacy Policy</a>
+          <a href="terms.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

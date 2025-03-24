@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Hub - Blogs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <i class="fas fa-newspaper"></i>
+          <span>Content Hub</span>
+        </a>
+      </div>
+      
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="blogs.html" class="active">Blogs</a>
+        <a href="videos.html">Videos</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html" class="active">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Our Blog Articles</h1>
+        <p>Explore insightful articles written by experts and enthusiasts across various categories</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="py-8 bg-gray-50">
+    <div class="container">
+      <div class="flex flex-wrap justify-between items-center">
+        <!-- Categories -->
+        <div class="mb-4 md:mb-0">
+          <span class="font-semibold mr-2">Categories:</span>
+          <a href="#" class="btn" style="background: var(--primary-color); color: white; padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">All</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">Technology</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">Business</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">Health</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem;">Lifestyle</a>
+        </div>
+        
+        <!-- Sort Options -->
+        <div>
+          <span class="font-semibold mr-2">Sort by:</span>
+          <select class="form-input" style="padding: 0.5rem; width: auto; display: inline-block;">
+            <option>Latest</option>
+            <option>Most Popular</option>
+            <option>Oldest</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Articles -->
+  <section class="py-16">
+    <div class="container">
+      <div class="card-grid">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Technology Trends">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Technology</span>
+              <span>March 15, 2023</span>
+            </div>
+            <h3 class="blog-title">10 Technology Trends That Will Shape The Future</h3>
+            <p class="blog-excerpt">From artificial intelligence to quantum computing, these emerging technologies are set to revolutionize how we live and work in the coming decade.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 2 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Personal Finance">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Finance</span>
+              <span>March 10, 2023</span>
+            </div>
+            <h3 class="blog-title">The Ultimate Guide to Personal Finance Management</h3>
+            <p class="blog-excerpt">Discover practical strategies to manage your finances effectively, build savings, and achieve financial freedom with these expert-backed tips.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 3 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Healthy Recipes">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Health</span>
+              <span>March 8, 2023</span>
+            </div>
+            <h3 class="blog-title">5 Nutritious Recipes For Busy Professionals</h3>
+            <p class="blog-excerpt">These simple yet delicious recipes are perfect for professionals with tight schedules who still want to maintain a healthy diet and lifestyle.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 4 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Productivity">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Productivity</span>
+              <span>March 5, 2023</span>
+            </div>
+            <h3 class="blog-title">How to Boost Your Productivity Using the Pomodoro Technique</h3>
+            <p class="blog-excerpt">The Pomodoro Technique is a time management method that can dramatically improve your focus and productivity. Learn how to implement it effectively.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 5 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Machine Learning">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Technology</span>
+              <span>March 3, 2023</span>
+            </div>
+            <h3 class="blog-title">A Beginner's Guide to Machine Learning Algorithms</h3>
+            <p class="blog-excerpt">This comprehensive guide breaks down complex machine learning algorithms into simple concepts that even beginners can understand.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 6 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Remote Work">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Work</span>
+              <span>February 28, 2023</span>
+            </div>
+            <h3 class="blog-title">The Future of Remote Work: Trends and Predictions</h3>
+            <p class="blog-excerpt">Remote work has transformed the global workforce. Explore the latest trends and predictions for the future of work in a post-pandemic world.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 7 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Startup Growth">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Business</span>
+              <span>February 25, 2023</span>
+            </div>
+            <h3 class="blog-title">5 Key Strategies for Sustainable Startup Growth</h3>
+            <p class="blog-excerpt">Building a successful startup requires more than just a great idea. Learn five proven strategies for achieving sustainable long-term growth.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 8 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mental Health">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Health</span>
+              <span>February 20, 2023</span>
+            </div>
+            <h3 class="blog-title">The Importance of Mental Health in the Workplace</h3>
+            <p class="blog-excerpt">Prioritizing mental health in the workplace isn't just good for employees—it's essential for business success. Here's why and how to do it effectively.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 9 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Web Development">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Technology</span>
+              <span>February 18, 2023</span>
+            </div>
+            <h3 class="blog-title">Web Development Trends to Watch in 2023</h3>
+            <p class="blog-excerpt">The web development landscape is constantly evolving. Stay ahead of the curve with these emerging trends and technologies for 2023 and beyond.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <div class="flex justify-center mt-12">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a href="#" class="btn" style="background: var(--primary-color); color: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">1</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">2</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">3</a>
+          <span style="width: 40px; text-align: center;">...</span>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">10</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Submit Blog Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container">
+      <div class="upload-section">
+        <div class="section-header">
+          <h2>Share Your Knowledge</h2>
+          <p>Have something valuable to share? Submit your blog post and contribute to our community</p>
+        </div>
+        
+        <div class="upload-form">
+          <form id="blog-submit-form">
+            <div class="form-group">
+              <label for="title" class="form-label">Blog Title</label>
+              <input type="text" id="title" name="title" class="form-input" placeholder="Enter a compelling title" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="category" class="form-label">Category</label>
+              <select id="category" name="category" class="form-input" required>
+                <option value="">Select a category</option>
+                <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="health">Health & Wellness</option>
+                <option value="lifestyle">Lifestyle</option>
+                <option value="education">Education</option>
+                <option value="entertainment">Entertainment</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="thumbnail" class="form-label">Featured Image</label>
+              <input type="file" id="thumbnail" name="thumbnail" class="form-input file-input" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+              <label for="content" class="form-label">Blog Content</label>
+              <textarea id="content" name="content" class="form-input" rows="10" placeholder="Write your blog content here (minimum 500 words)" required></textarea>
+            </div>
+            
+            <button type="submit" class="form-submit">
+              Submit Blog Post
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title">About Content Hub</h3>
+          <p class="footer-text">A community-driven platform for discovering and sharing high-quality blogs and videos across various topics of interest.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Entertainment</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Content Street, Knowledge City, 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@contenthub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Content Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Privacy Policy</a>
+          <a href="terms.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

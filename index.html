@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Hub - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <i class="fas fa-newspaper"></i>
+          <span>Content Hub</span>
+        </a>
+      </div>
+      
+      <div class="navbar-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="videos.html">Videos</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Discover, Learn, Share</h1>
+        <p>Your one-stop destination for insightful blogs and engaging videos on various topics. Join our community to share your knowledge and connect with like-minded individuals.</p>
+        <div class="mt-8">
+          <a href="blogs.html" class="btn btn-primary">
+            Explore Blogs
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="videos.html" class="btn btn-outline ml-4">
+            Watch Videos
+            <i class="fas fa-play"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="stat-number" data-value="25000">25,000</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="stat-number" data-value="8500">8,500</div>
+          <div class="stat-label">Blog Articles</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <div class="stat-number" data-value="4200">4,200</div>
+          <div class="stat-label">Video Content</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-comment"></i>
+          </div>
+          <div class="stat-number" data-value="42000">42,000</div>
+          <div class="stat-label">Community Discussions</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Blogs -->
+  <section class="py-16">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Blogs</h2>
+        <p>Explore our handpicked collection of top blog posts from various categories</p>
+      </div>
+      
+      <div class="card-grid">
+        <!-- Blog 1 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Technology Trends">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Technology</span>
+              <span>March 15, 2023</span>
+            </div>
+            <h3 class="blog-title">10 Technology Trends That Will Shape The Future</h3>
+            <p class="blog-excerpt">From artificial intelligence to quantum computing, these emerging technologies are set to revolutionize how we live and work in the coming decade.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 2 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Personal Finance">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Finance</span>
+              <span>March 10, 2023</span>
+            </div>
+            <h3 class="blog-title">The Ultimate Guide to Personal Finance Management</h3>
+            <p class="blog-excerpt">Discover practical strategies to manage your finances effectively, build savings, and achieve financial freedom with these expert-backed tips.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Blog 3 -->
+        <div class="blog-card">
+          <div class="blog-img">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Healthy Recipes">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Health</span>
+              <span>March 8, 2023</span>
+            </div>
+            <h3 class="blog-title">5 Nutritious Recipes For Busy Professionals</h3>
+            <p class="blog-excerpt">These simple yet delicious recipes are perfect for professionals with tight schedules who still want to maintain a healthy diet and lifestyle.</p>
+            <a href="blog-details.html" class="blog-link">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="blogs.html" class="btn btn-outline">
+          View All Blogs
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Videos -->
+  <section class="py-16 bg-gray-50">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Videos</h2>
+        <p>Watch our collection of engaging and informative videos created by our community</p>
+      </div>
+      
+      <div class="card-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Digital Marketing">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Business</span>
+              <span>15:30</span>
+            </div>
+            <h3 class="video-title">Digital Marketing Strategies for 2023</h3>
+            <p class="video-description">Learn about the latest digital marketing trends and strategies that will help your business thrive in the competitive online landscape.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Productivity Tips">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Productivity</span>
+              <span>10:15</span>
+            </div>
+            <h3 class="video-title">7 Productivity Hacks for Remote Workers</h3>
+            <p class="video-description">Discover practical tips and techniques to boost your productivity and maintain work-life balance while working remotely.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Coding Tutorial">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Technology</span>
+              <span>25:45</span>
+            </div>
+            <h3 class="video-title">Introduction to Web Development</h3>
+            <p class="video-description">A beginner-friendly guide to web development fundamentals, covering HTML, CSS, and JavaScript with practical examples.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-8">
+        <a href="videos.html" class="btn btn-outline">
+          View All Videos
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Platform Section -->
+  <section class="py-16">
+    <div class="container">
+      <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">About Our Platform</h2>
+          <p class="mb-4">Content Hub is a community-driven platform where knowledge enthusiasts can discover, share, and engage with high-quality content across various topics.</p>
+          <p class="mb-4">Our mission is to democratize knowledge sharing and create a space where experts and learners can connect, collaborate, and grow together.</p>
+          <p class="mb-6">Whether you're looking to expand your knowledge, share your expertise, or connect with like-minded individuals, Content Hub offers the perfect environment to achieve your goals.</p>
+          
+          <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <h4 class="text-xl font-semibold mb-2">For Content Creators</h4>
+              <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                <li>Share your knowledge</li>
+                <li>Reach a wider audience</li>
+                <li>Build your personal brand</li>
+                <li>Connect with peers</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-xl font-semibold mb-2">For Readers/Viewers</h4>
+              <ul style="list-style-type: disc; padding-left: 1.5rem;">
+                <li>Discover quality content</li>
+                <li>Learn from experts</li>
+                <li>Save favorite articles</li>
+                <li>Engage in discussions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Community Collaboration" style="border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container">
+      <div class="section-header">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter to receive weekly curated content and platform updates</p>
+      </div>
+      
+      <div style="max-width: 600px; margin: 0 auto;">
+        <form class="newsletter-form">
+          <div style="display: flex; gap: 1rem;">
+            <input type="email" placeholder="Enter your email address" class="form-input" style="flex-grow: 1;" required>
+            <button type="submit" class="btn btn-primary" style="white-space: nowrap;">
+              Subscribe
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+          <p style="text-align: center; font-size: 0.875rem; color: var(--light-text); margin-top: 0.75rem;">We respect your privacy. Unsubscribe at any time.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title">About Content Hub</h3>
+          <p class="footer-text">A community-driven platform for discovering and sharing high-quality blogs and videos across various topics of interest.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Entertainment</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Content Street, Knowledge City, 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@contenthub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Content Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Privacy Policy</a>
+          <a href="terms.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

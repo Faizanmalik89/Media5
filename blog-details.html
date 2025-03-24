@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Hub - Blog Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <i class="fas fa-newspaper"></i>
+          <span>Content Hub</span>
+        </a>
+      </div>
+      
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="blogs.html" class="active">Blogs</a>
+        <a href="videos.html">Videos</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html" class="active">Blogs</a>
+      <a href="videos.html">Videos</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </nav>
+
+  <!-- Blog Detail -->
+  <section class="blog-detail">
+    <div class="container">
+      <!-- Blog Header -->
+      <div class="blog-header">
+        <div style="display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="background-color: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">Technology</span>
+        </div>
+        <h1>10 Technology Trends That Will Shape The Future</h1>
+        <div class="blog-header-meta">
+          <span><i class="far fa-calendar-alt"></i> March 15, 2023</span>
+          <span><i class="far fa-user"></i> By John Smith</span>
+          <span><i class="far fa-clock"></i> 8 min read</span>
+          <span><i class="far fa-comment"></i> 24 Comments</span>
+        </div>
+      </div>
+      
+      <!-- Featured Image -->
+      <div class="blog-featured-img">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Technology Trends">
+      </div>
+      
+      <!-- Blog Content -->
+      <div class="blog-content" style="max-width: 800px; margin: 0 auto;">
+        <p>From artificial intelligence to quantum computing, emerging technologies are set to revolutionize how we live and work in the coming decade. Staying informed about these innovations is crucial for businesses and individuals looking to navigate the rapidly changing technological landscape.</p>
+        
+        <p>In this article, we'll explore ten groundbreaking technology trends that are poised to reshape our future, examining their potential applications, challenges, and impact on society.</p>
+        
+        <h2>1. Artificial Intelligence & Machine Learning</h2>
+        <p>Artificial Intelligence (AI) continues to be one of the most transformative technological innovations of our time. Recent advancements in machine learning algorithms, particularly deep learning, have enabled computers to recognize patterns, make decisions, and learn from data with unprecedented accuracy.</p>
+        
+        <p>Key applications of AI include:</p>
+        <ul>
+          <li>Healthcare diagnostics and personalized medicine</li>
+          <li>Autonomous vehicles and transportation systems</li>
+          <li>Smart assistants and conversational AI</li>
+          <li>Predictive analytics for business intelligence</li>
+          <li>Content creation and creative assistance</li>
+        </ul>
+        
+        <p>The integration of AI into everyday products and services is accelerating, making these systems more intuitive, responsive, and valuable. As AI becomes more sophisticated, ethical considerations around privacy, bias, and job displacement will need to be addressed thoughtfully.</p>
+        
+        <h2>2. Quantum Computing</h2>
+        <p>Quantum computing harnesses the principles of quantum mechanics to process information in fundamentally different ways than classical computers. While still in its early stages, quantum computing promises to solve complex problems that are currently intractable for even the most powerful supercomputers.</p>
+        
+        <p>Potential applications include:</p>
+        <ul>
+          <li>Cryptography and cybersecurity</li>
+          <li>Drug discovery and materials science</li>
+          <li>Optimization problems in logistics and supply chain</li>
+          <li>Climate modeling and weather prediction</li>
+          <li>Financial modeling and risk assessment</li>
+        </ul>
+        
+        <p>As quantum computers become more stable and accessible, they could revolutionize fields that rely on processing enormous datasets or solving complex mathematical problems.</p>
+        
+        <h2>3. Extended Reality (XR)</h2>
+        <p>Extended Reality encompasses virtual reality (VR), augmented reality (AR), and mixed reality (MR) technologies. These immersive technologies are blurring the lines between the physical and digital worlds, creating new possibilities for entertainment, education, healthcare, and business.</p>
+        
+        <p>Notable developments in XR include:</p>
+        <ul>
+          <li>Increasingly lightweight and affordable VR headsets</li>
+          <li>AR applications for smartphones and wearable devices</li>
+          <li>Mixed reality platforms for industrial training and remote collaboration</li>
+          <li>Virtual spaces for social interaction and shared experiences</li>
+          <li>Digital twins of physical spaces and objects</li>
+        </ul>
+        
+        <p>As XR technologies mature and become more intuitive, they will transform how we interact with information, entertainment, and each other.</p>
+        
+        <h2>4. Internet of Things (IoT) and Edge Computing</h2>
+        <p>The Internet of Things continues to expand, with billions of connected devices gathering and exchanging data. Alongside this growth, edge computing is emerging as a critical infrastructure component, processing data closer to its source rather than sending everything to centralized cloud servers.</p>
+        
+        <p>This combination enables:</p>
+        <ul>
+          <li>Smart homes and buildings with responsive environments</li>
+          <li>Connected healthcare devices for remote monitoring</li>
+          <li>Industrial IoT for predictive maintenance and efficiency</li>
+          <li>Smart cities with optimized infrastructure and services</li>
+          <li>Real-time data processing for time-sensitive applications</li>
+        </ul>
+        
+        <h2>5. 5G and Beyond</h2>
+        <p>The rollout of 5G networks is transforming wireless communication with significantly faster speeds, lower latency, and more reliable connections. This infrastructure will enable many of the other technologies on this list, providing the connectivity backbone for our increasingly digital world.</p>
+        
+        <p>Benefits of advanced wireless networks include:</p>
+        <ul>
+          <li>Enhanced mobile broadband for consumers</li>
+          <li>Mission-critical communications for emergency services</li>
+          <li>Massive IoT connectivity for smart cities and industrial applications</li>
+          <li>New possibilities for remote work and telehealth</li>
+          <li>Foundation for autonomous vehicles and drones</li>
+        </ul>
+        
+        <p>Research into 6G is already underway, promising even more revolutionary capabilities in the coming decades.</p>
+        
+        <h2>6. Biotechnology and Synthetic Biology</h2>
+        <p>Advances in genetic engineering, synthetic biology, and biocomputing are accelerating our ability to understand, modify, and create biological systems. These technologies have profound implications for healthcare, agriculture, materials science, and environmental conservation.</p>
+        
+        <p>Emerging applications include:</p>
+        <ul>
+          <li>CRISPR gene editing for treating genetic diseases</li>
+          <li>Synthetic biology for producing novel materials and medicines</li>
+          <li>Lab-grown meat and other sustainable food sources</li>
+          <li>Biofabrication of organs and tissues for transplantation</li>
+          <li>Biological computing systems and data storage</li>
+        </ul>
+        
+        <h2>7. Renewable Energy Technologies</h2>
+        <p>The transition to sustainable energy sources is being accelerated by technological innovations that make renewable energy more efficient, affordable, and accessible. These advances are crucial for addressing climate change and building a more sustainable future.</p>
+        
+        <p>Key developments include:</p>
+        <ul>
+          <li>Next-generation solar cells with higher efficiency</li>
+          <li>Advanced energy storage solutions</li>
+          <li>Smart grids for optimized energy distribution</li>
+          <li>Green hydrogen production and utilization</li>
+          <li>Small modular nuclear reactors</li>
+        </ul>
+        
+        <h2>8. Space Technologies</h2>
+        <p>We are entering a new era of space exploration and commercialization, driven by reduced launch costs, miniaturization of satellites, and increased private sector involvement. These developments are opening up new frontiers for research, business, and potentially human settlement.</p>
+        
+        <p>Exciting developments include:</p>
+        <ul>
+          <li>Reusable rockets and spacecraft</li>
+          <li>Satellite constellations for global internet coverage</li>
+          <li>Space tourism and commercial space stations</li>
+          <li>Asteroid mining and space-based manufacturing</li>
+          <li>Advanced propulsion systems for deep space exploration</li>
+        </ul>
+        
+        <h2>9. Robotics and Automation</h2>
+        <p>Robots are becoming more intelligent, versatile, and capable of working alongside humans in various environments. The integration of AI, improved sensors, and advanced materials is accelerating the adoption of robotics across industries.</p>
+        
+        <p>Emerging robotics applications include:</p>
+        <ul>
+          <li>Collaborative robots (cobots) in manufacturing</li>
+          <li>Autonomous delivery vehicles and drones</li>
+          <li>Healthcare and elder care assistance</li>
+          <li>Exoskeletons for rehabilitation and strength augmentation</li>
+          <li>Agricultural robots for precision farming</li>
+        </ul>
+        
+        <h2>10. Advanced Materials</h2>
+        <p>Scientists and engineers are developing novel materials with properties tailored for specific applications, from self-healing concrete to programmable matter. These advanced materials will enable more efficient, durable, and sustainable products across industries.</p>
+        
+        <p>Notable examples include:</p>
+        <ul>
+          <li>Graphene and other 2D materials</li>
+          <li>Metamaterials with unusual optical or acoustic properties</li>
+          <li>Biodegradable and compostable plastics</li>
+          <li>Self-healing materials for infrastructure and consumer products</li>
+          <li>Nanomaterials for medicine, electronics, and energy applications</li>
+        </ul>
+        
+        <h2>Conclusion</h2>
+        <p>These ten technology trends represent some of the most promising and potentially disruptive developments on the horizon. While each is impressive on its own, the real power lies in their convergence and the synergies that emerge when they're combined.</p>
+        
+        <p>Organizations and individuals who understand these trends and position themselves to leverage them will be better prepared for the opportunities and challenges of our rapidly evolving technological landscape. As with any period of technological transformation, success will depend on our ability to harness these innovations responsibly, addressing ethical considerations and ensuring that the benefits are broadly shared.</p>
+        
+        <div style="margin-top: 3rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Author" style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover;">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.25rem;">John Smith</h3>
+              <p style="color: var(--light-text);">Technology analyst and futurist with over 15 years of experience in emerging technologies. John has advised Fortune 500 companies on technology strategy and innovation.</p>
+            </div>
+          </div>
+          
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: #f2f2f2; border-radius: 50%; color: var(--text-color);">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: #f2f2f2; border-radius: 50%; color: var(--text-color);">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; background-color: #f2f2f2; border-radius: 50%; color: var(--text-color);">
+              <i class="fas fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Share and Comments Section -->
+      <div style="max-width: 800px; margin: 3rem auto 0;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+          <div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Share This Article</h3>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #1877f2; border-radius: 50%; color: white;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #1da1f2; border-radius: 50%; color: white;">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #0a66c2; border-radius: 50%; color: white;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #25D366; border-radius: 50%; color: white;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #ea4335; border-radius: 50%; color: white;">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <button style="display: flex; align-items: center; gap: 0.5rem; background: none; border: none; color: var(--text-color); font-size: 0.9rem;">
+              <i class="far fa-bookmark"></i> Save
+            </button>
+            <button style="display: flex; align-items: center; gap: 0.5rem; background: none; border: none; color: var(--text-color); font-size: 0.9rem;">
+              <i class="far fa-heart"></i> Like
+            </button>
+          </div>
+        </div>
+        
+        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Comments (24)</h3>
+        
+        <!-- Comment Form -->
+        <div style="margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 8px; padding: 1.5rem;">
+          <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Leave a Comment</h4>
+          <form>
+            <div style="margin-bottom: 1rem;">
+              <textarea style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; min-height: 120px; font-family: inherit;" placeholder="Share your thoughts..."></textarea>
+            </div>
+            <div style="display: flex; justify-content: flex-end;">
+              <button type="submit" class="btn btn-primary">Post Comment</button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Comments -->
+        <div>
+          <!-- Comment 1 -->
+          <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+            <div style="display: flex; gap: 1rem;">
+              <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="User" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="flex-grow: 1;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <h5 style="font-size: 1rem; font-weight: 600;">Sarah Johnson</h5>
+                  <span style="font-size: 0.875rem; color: var(--light-text);">2 days ago</span>
+                </div>
+                <p style="margin-bottom: 1rem;">Great article! I'm particularly interested in quantum computing and its potential applications in drug discovery. Do you have any recommendations for resources to learn more about this specific application?</p>
+                <div style="display: flex; gap: 1rem;">
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-thumbs-up"></i> 12
+                  </button>
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-comment"></i> Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Comment 2 -->
+          <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+            <div style="display: flex; gap: 1rem;">
+              <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="User" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="flex-grow: 1;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <h5 style="font-size: 1rem; font-weight: 600;">Michael Chen</h5>
+                  <span style="font-size: 0.875rem; color: var(--light-text);">3 days ago</span>
+                </div>
+                <p style="margin-bottom: 1rem;">I think the most exciting convergence will be between AI, IoT, and 5G. The ability to process massive amounts of data in real-time from distributed sensors will enable some truly transformative applications, especially in urban environments and industrial settings.</p>
+                <div style="display: flex; gap: 1rem;">
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-thumbs-up"></i> 8
+                  </button>
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-comment"></i> Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Comment 3 -->
+          <div>
+            <div style="display: flex; gap: 1rem;">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="flex-grow: 1;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <h5 style="font-size: 1rem; font-weight: 600;">Emma Rodriguez</h5>
+                  <span style="font-size: 0.875rem; color: var(--light-text);">5 days ago</span>
+                </div>
+                <p style="margin-bottom: 1rem;">While these technologies offer incredible opportunities, I think we need to be more mindful of their social and ethical implications. How do we ensure that the benefits of these advances are equitably distributed? What safeguards should be put in place to prevent misuse? These are questions that need to be addressed alongside technical development.</p>
+                <div style="display: flex; gap: 1rem;">
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-thumbs-up"></i> 15
+                  </button>
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-comment"></i> Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <button class="btn btn-outline">Load More Comments</button>
+        </div>
+      </div>
+      
+      <!-- Related Articles -->
+      <div style="margin-top: 4rem;">
+        <h2 style="text-align: center; font-size: 1.75rem; margin-bottom: 2rem;">Related Articles</h2>
+        
+        <div class="card-grid">
+          <!-- Related Article 1 -->
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Machine Learning">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>Technology</span>
+                <span>March 3, 2023</span>
+              </div>
+              <h3 class="blog-title">A Beginner's Guide to Machine Learning Algorithms</h3>
+              <p class="blog-excerpt">This comprehensive guide breaks down complex machine learning algorithms into simple concepts that even beginners can understand.</p>
+              <a href="blog-details.html" class="blog-link">
+                Read More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Related Article 2 -->
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Web Development">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>Technology</span>
+                <span>February 18, 2023</span>
+              </div>
+              <h3 class="blog-title">Web Development Trends to Watch in 2023</h3>
+              <p class="blog-excerpt">The web development landscape is constantly evolving. Stay ahead of the curve with these emerging trends and technologies for 2023 and beyond.</p>
+              <a href="blog-details.html" class="blog-link">
+                Read More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Related Article 3 -->
+          <div class="blog-card">
+            <div class="blog-img">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Startup Growth">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>Business</span>
+                <span>February 25, 2023</span>
+              </div>
+              <h3 class="blog-title">5 Key Strategies for Sustainable Startup Growth</h3>
+              <p class="blog-excerpt">Building a successful startup requires more than just a great idea. Learn five proven strategies for achieving sustainable long-term growth.</p>
+              <a href="blog-details.html" class="blog-link">
+                Read More
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title">About Content Hub</h3>
+          <p class="footer-text">A community-driven platform for discovering and sharing high-quality blogs and videos across various topics of interest.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Entertainment</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Content Street, Knowledge City, 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@contenthub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Content Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Privacy Policy</a>
+          <a href="terms.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

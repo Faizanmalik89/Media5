@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Hub - Video Details</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <i class="fas fa-newspaper"></i>
+          <span>Content Hub</span>
+        </a>
+      </div>
+      
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="videos.html" class="active">Videos</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html" class="active">Videos</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </nav>
+
+  <!-- Video Detail -->
+  <section class="video-detail">
+    <div class="container">
+      <!-- Video Embed -->
+      <div class="video-embed">
+        <!-- This would normally be a YouTube iframe, but we're using an image with play button for the static site -->
+        <div style="position: relative; height: 100%; background-color: #000;">
+          <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Digital Marketing" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.7;">
+          <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <div style="width: 80px; height: 80px; background-color: rgba(255, 255, 255, 0.9); border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+              <i class="fas fa-play" style="color: var(--primary-color); font-size: 1.75rem;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Video Header -->
+      <div class="video-header">
+        <div style="display: flex; gap: 0.75rem; margin-bottom: 1rem;">
+          <span style="background-color: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.875rem;">Business</span>
+        </div>
+        <h1>Digital Marketing Strategies for 2023</h1>
+        <div class="video-header-meta">
+          <span><i class="far fa-calendar-alt"></i> March 20, 2023</span>
+          <span><i class="far fa-user"></i> By Sarah Johnson</span>
+          <span><i class="far fa-clock"></i> 15:30</span>
+          <span><i class="far fa-eye"></i> 8.2K views</span>
+        </div>
+      </div>
+      
+      <!-- Video Description -->
+      <div class="video-description" style="max-width: 800px; margin: 0 auto 2rem;">
+        <p>Learn about the latest digital marketing trends and strategies that will help your business thrive in the competitive online landscape of 2023.</p>
+        
+        <p>In this comprehensive guide, marketing expert Sarah Johnson walks you through actionable tactics for improving your online presence, engaging with your audience, and driving measurable results through various digital channels.</p>
+        
+        <h3 style="margin: 1.5rem 0 0.75rem; font-size: 1.25rem;">Topics covered in this video:</h3>
+        <ul style="list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1.5rem;">
+          <li>The evolution of social media marketing in 2023</li>
+          <li>Leveraging AI tools for content creation and optimization</li>
+          <li>Video marketing strategies across different platforms</li>
+          <li>Voice search optimization techniques</li>
+          <li>Personalization and customer experience enhancement</li>
+          <li>Data privacy considerations in digital marketing</li>
+          <li>Performance measurement and ROI tracking</li>
+        </ul>
+        
+        <p>Whether you're a small business owner looking to establish your online presence or a marketing professional seeking to refine your digital strategy, this video offers valuable insights and practical advice to help you navigate the ever-changing digital marketing landscape.</p>
+        
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <span style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #f5f5f5; padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.875rem;">
+            <i class="fas fa-hashtag" style="color: var(--primary-color);"></i> Digital Marketing
+          </span>
+          <span style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #f5f5f5; padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.875rem;">
+            <i class="fas fa-hashtag" style="color: var(--primary-color);"></i> Social Media
+          </span>
+          <span style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #f5f5f5; padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.875rem;">
+            <i class="fas fa-hashtag" style="color: var(--primary-color);"></i> Content Strategy
+          </span>
+          <span style="display: inline-flex; align-items: center; gap: 0.5rem; background-color: #f5f5f5; padding: 0.5rem 1rem; border-radius: 30px; font-size: 0.875rem;">
+            <i class="fas fa-hashtag" style="color: var(--primary-color);"></i> Business Growth
+          </span>
+        </div>
+      </div>
+      
+      <!-- Instructor Bio -->
+      <div style="max-width: 800px; margin: 0 auto 3rem; background-color: #f9f9f9; border-radius: 8px; padding: 1.5rem; box-shadow: var(--card-shadow);">
+        <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">About the Instructor</h3>
+        <div style="display: flex; gap: 1.5rem; align-items: center;">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover;">
+          <div>
+            <h4 style="font-size: 1.125rem; margin-bottom: 0.25rem;">Sarah Johnson</h4>
+            <p style="color: var(--primary-color); font-weight: 500; margin-bottom: 0.5rem;">Digital Marketing Strategist</p>
+            <p style="color: var(--light-text); font-size: 0.95rem;">Sarah is a seasoned digital marketing strategist with over 10 years of experience working with brands ranging from startups to Fortune 500 companies. She specializes in creating data-driven marketing strategies that deliver measurable results.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Share and Engagement Section -->
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+          <div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;">Share This Video</h3>
+            <div style="display: flex; gap: 0.75rem;">
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #1877f2; border-radius: 50%; color: white;">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #1da1f2; border-radius: 50%; color: white;">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #0a66c2; border-radius: 50%; color: white;">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #25D366; border-radius: 50%; color: white;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #ea4335; border-radius: 50%; color: white;">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div style="display: flex; align-items: center; gap: 1.5rem;">
+            <button style="display: flex; align-items: center; gap: 0.5rem; background: none; border: none; color: var(--text-color); font-size: 0.95rem;">
+              <i class="far fa-thumbs-up"></i> Like (512)
+            </button>
+            <button style="display: flex; align-items: center; gap: 0.5rem; background: none; border: none; color: var(--text-color); font-size: 0.95rem;">
+              <i class="far fa-bookmark"></i> Save
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Comments Section -->
+      <div style="max-width: 800px; margin: 0 auto 3rem;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Comments (42)</h3>
+        
+        <!-- Comment Form -->
+        <div style="margin-bottom: 2rem; background-color: #f9f9f9; border-radius: 8px; padding: 1.5rem;">
+          <form>
+            <div style="margin-bottom: 1rem;">
+              <textarea style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 4px; min-height: 100px; font-family: inherit;" placeholder="Add a comment..."></textarea>
+            </div>
+            <div style="display: flex; justify-content: flex-end;">
+              <button type="submit" class="btn btn-primary">Post Comment</button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Comments -->
+        <div>
+          <!-- Comment 1 -->
+          <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+            <div style="display: flex; gap: 1rem;">
+              <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="User" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="flex-grow: 1;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <h5 style="font-size: 1rem; font-weight: 600;">David Wilson</h5>
+                  <span style="font-size: 0.875rem; color: var(--light-text);">1 day ago</span>
+                </div>
+                <p style="margin-bottom: 1rem;">Excellent content! I particularly appreciated the section on data privacy considerations - this is becoming increasingly important with all the regulatory changes happening globally. Would love to see a follow-up video diving deeper into compliance strategies for small businesses.</p>
+                <div style="display: flex; gap: 1rem;">
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-thumbs-up"></i> 18
+                  </button>
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-comment"></i> Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Comment 2 -->
+          <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-color); padding-bottom: 1.5rem;">
+            <div style="display: flex; gap: 1rem;">
+              <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="User" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="flex-grow: 1;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <h5 style="font-size: 1rem; font-weight: 600;">Lisa Rodriguez</h5>
+                  <span style="font-size: 0.875rem; color: var(--light-text);">3 days ago</span>
+                </div>
+                <p style="margin-bottom: 1rem;">I've been implementing some of these social media strategies for my small business over the past few weeks and I'm already seeing a noticeable increase in engagement. The AI tool recommendations were extremely helpful too. Thanks for sharing your expertise!</p>
+                <div style="display: flex; gap: 1rem;">
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-thumbs-up"></i> 24
+                  </button>
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-comment"></i> Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Comment 3 -->
+          <div>
+            <div style="display: flex; gap: 1rem;">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" style="width: 48px; height: 48px; border-radius: 50%; object-fit: cover;">
+              <div style="flex-grow: 1;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <h5 style="font-size: 1rem; font-weight: 600;">Mark Thompson</h5>
+                  <span style="font-size: 0.875rem; color: var(--light-text);">5 days ago</span>
+                </div>
+                <p style="margin-bottom: 1rem;">As someone who's been in the digital marketing field for over a decade, I found this video to be refreshingly practical and up-to-date. So many "experts" recycle the same tired advice, but Sarah clearly keeps her finger on the pulse of what's actually working in today's landscape. The section on voice search optimization was especially insightful.</p>
+                <div style="display: flex; gap: 1rem;">
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-thumbs-up"></i> 31
+                  </button>
+                  <button style="display: flex; align-items: center; gap: 0.25rem; background: none; border: none; color: var(--light-text); font-size: 0.875rem;">
+                    <i class="far fa-comment"></i> Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+          <button class="btn btn-outline">Load More Comments</button>
+        </div>
+      </div>
+      
+      <!-- Related Videos -->
+      <div>
+        <h2 style="text-align: center; font-size: 1.75rem; margin-bottom: 2rem;">Related Videos</h2>
+        
+        <div class="card-grid">
+          <!-- Related Video 1 -->
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Productivity Tips">
+              <div class="video-play-overlay">
+                <div class="video-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="video-content">
+              <div class="video-meta">
+                <span>Productivity</span>
+                <span>10:15</span>
+              </div>
+              <h3 class="video-title">7 Productivity Hacks for Remote Workers</h3>
+              <p class="video-description">Discover practical tips and techniques to boost your productivity and maintain work-life balance while working remotely.</p>
+              <a href="video-details.html" class="video-link">
+                Watch Video
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Related Video 2 -->
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <img src="https://img.youtube.com/vi/1Q8fG0TtVAY/maxresdefault.jpg" alt="Financial Planning">
+              <div class="video-play-overlay">
+                <div class="video-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="video-content">
+              <div class="video-meta">
+                <span>Finance</span>
+                <span>18:22</span>
+              </div>
+              <h3 class="video-title">Financial Planning for Beginners</h3>
+              <p class="video-description">Essential financial planning strategies and tips for beginners looking to build wealth and secure their financial future.</p>
+              <a href="video-details.html" class="video-link">
+                Watch Video
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Related Video 3 -->
+          <div class="video-card">
+            <div class="video-thumbnail">
+              <img src="https://img.youtube.com/vi/QFvqStqPCRU/maxresdefault.jpg" alt="Public Speaking">
+              <div class="video-play-overlay">
+                <div class="video-play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+            <div class="video-content">
+              <div class="video-meta">
+                <span>Career</span>
+                <span>22:17</span>
+              </div>
+              <h3 class="video-title">Master the Art of Public Speaking</h3>
+              <p class="video-description">Learn effective techniques to overcome fear, engage your audience, and deliver powerful presentations with confidence.</p>
+              <a href="video-details.html" class="video-link">
+                Watch Video
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title">About Content Hub</h3>
+          <p class="footer-text">A community-driven platform for discovering and sharing high-quality blogs and videos across various topics of interest.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Entertainment</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Content Street, Knowledge City, 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@contenthub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Content Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Privacy Policy</a>
+          <a href="terms.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

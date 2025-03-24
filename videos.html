@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Hub - Videos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <i class="fas fa-newspaper"></i>
+          <span>Content Hub</span>
+        </a>
+      </div>
+      
+      <div class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="videos.html" class="active">Videos</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button type="button" id="mobile-menu-button" class="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="blogs.html">Blogs</a>
+      <a href="videos.html" class="active">Videos</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="login.html">Login</a>
+      <a href="contact.html">Contact</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero" style="padding: 3rem 0;">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Educational Videos</h1>
+        <p>Watch and learn from our collection of high-quality educational videos across various topics</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="py-8 bg-gray-50">
+    <div class="container">
+      <div class="flex flex-wrap justify-between items-center">
+        <!-- Categories -->
+        <div class="mb-4 md:mb-0">
+          <span class="font-semibold mr-2">Categories:</span>
+          <a href="#" class="btn" style="background: var(--primary-color); color: white; padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">All</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">Technology</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">Business</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem; margin-right: 0.5rem;">Education</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.875rem;">Health</a>
+        </div>
+        
+        <!-- Sort Options -->
+        <div>
+          <span class="font-semibold mr-2">Sort by:</span>
+          <select class="form-input" style="padding: 0.5rem; width: auto; display: inline-block;">
+            <option>Latest</option>
+            <option>Most Viewed</option>
+            <option>Highest Rated</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Grid -->
+  <section class="py-16">
+    <div class="container">
+      <div class="card-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Digital Marketing">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Business</span>
+              <span>15:30</span>
+            </div>
+            <h3 class="video-title">Digital Marketing Strategies for 2023</h3>
+            <p class="video-description">Learn about the latest digital marketing trends and strategies that will help your business thrive in the competitive online landscape.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Productivity Tips">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Productivity</span>
+              <span>10:15</span>
+            </div>
+            <h3 class="video-title">7 Productivity Hacks for Remote Workers</h3>
+            <p class="video-description">Discover practical tips and techniques to boost your productivity and maintain work-life balance while working remotely.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/ZXsQAXx_ao0/maxresdefault.jpg" alt="Coding Tutorial">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Technology</span>
+              <span>25:45</span>
+            </div>
+            <h3 class="video-title">Introduction to Web Development</h3>
+            <p class="video-description">A beginner-friendly guide to web development fundamentals, covering HTML, CSS, and JavaScript with practical examples.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 4 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/1Q8fG0TtVAY/maxresdefault.jpg" alt="Financial Planning">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Finance</span>
+              <span>18:22</span>
+            </div>
+            <h3 class="video-title">Financial Planning for Beginners</h3>
+            <p class="video-description">Essential financial planning strategies and tips for beginners looking to build wealth and secure their financial future.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 5 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/8mei6uVttho/maxresdefault.jpg" alt="Yoga Class">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Health</span>
+              <span>35:10</span>
+            </div>
+            <h3 class="video-title">30-Minute Yoga Class for Stress Relief</h3>
+            <p class="video-description">A gentle yoga practice designed to help you release tension, reduce stress, and improve overall well-being in just 30 minutes.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 6 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/QFvqStqPCRU/maxresdefault.jpg" alt="Public Speaking">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Career</span>
+              <span>22:17</span>
+            </div>
+            <h3 class="video-title">Master the Art of Public Speaking</h3>
+            <p class="video-description">Learn effective techniques to overcome fear, engage your audience, and deliver powerful presentations with confidence.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 7 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/fHsa9DqmId8/maxresdefault.jpg" alt="Photography">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Photography</span>
+              <span>28:05</span>
+            </div>
+            <h3 class="video-title">Smartphone Photography: Tips and Tricks</h3>
+            <p class="video-description">Transform your smartphone photography with these professional techniques, composition tips, and editing workflows.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 8 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/Cv1RJTHf5fk/maxresdefault.jpg" alt="Artificial Intelligence">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Technology</span>
+              <span>45:30</span>
+            </div>
+            <h3 class="video-title">Understanding Artificial Intelligence and Machine Learning</h3>
+            <p class="video-description">A comprehensive overview of AI and ML concepts, their applications, and how they're shaping our future.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Video 9 -->
+        <div class="video-card">
+          <div class="video-thumbnail">
+            <img src="https://img.youtube.com/vi/BJYZnCUBTlw/maxresdefault.jpg" alt="Leadership Skills">
+            <div class="video-play-overlay">
+              <div class="video-play-button">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div class="video-content">
+            <div class="video-meta">
+              <span>Leadership</span>
+              <span>32:48</span>
+            </div>
+            <h3 class="video-title">Developing Effective Leadership Skills</h3>
+            <p class="video-description">Discover the core qualities and practices that define great leaders and learn how to cultivate these skills in your professional life.</p>
+            <a href="video-details.html" class="video-link">
+              Watch Video
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="admin-controls">
+              <button class="btn-edit">
+                <i class="fas fa-edit"></i> Edit
+              </button>
+              <button class="btn-delete">
+                <i class="fas fa-trash"></i> Delete
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pagination -->
+      <div class="flex justify-center mt-12">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a href="#" class="btn" style="background: var(--primary-color); color: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">1</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">2</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">3</a>
+          <span style="width: 40px; text-align: center;">...</span>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">8</a>
+          <a href="#" class="btn" style="background: white; border: 1px solid var(--border-color); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 4px;">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admin Upload Section (Only visible to admins) -->
+  <section class="py-16 bg-gray-50">
+    <div class="container">
+      <div class="upload-section">
+        <div class="section-header">
+          <h2>Admin Video Upload</h2>
+          <p>Upload new educational videos to expand our content library (Admin only)</p>
+        </div>
+        
+        <div class="upload-form">
+          <form id="video-upload-form">
+            <div class="form-group">
+              <label for="video-title" class="form-label">Video Title</label>
+              <input type="text" id="video-title" name="title" class="form-input" placeholder="Enter a descriptive title" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="video-category" class="form-label">Category</label>
+              <select id="video-category" name="category" class="form-input" required>
+                <option value="">Select a category</option>
+                <option value="technology">Technology</option>
+                <option value="business">Business</option>
+                <option value="health">Health & Wellness</option>
+                <option value="education">Education</option>
+                <option value="career">Career Development</option>
+                <option value="finance">Finance</option>
+                <option value="lifestyle">Lifestyle</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="video-url" class="form-label">Video URL (YouTube/Vimeo)</label>
+              <input type="url" id="video-url" name="url" class="form-input" placeholder="Enter video URL" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="video-thumbnail" class="form-label">Custom Thumbnail (Optional)</label>
+              <input type="file" id="video-thumbnail" name="thumbnail" class="form-input file-input" accept="image/*">
+            </div>
+            
+            <div class="form-group">
+              <label for="video-description" class="form-label">Video Description</label>
+              <textarea id="video-description" name="description" class="form-input" rows="5" placeholder="Provide a detailed description of the video content" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="video-duration" class="form-label">Duration (minutes:seconds)</label>
+              <input type="text" id="video-duration" name="duration" class="form-input" placeholder="e.g., 15:30" required>
+            </div>
+            
+            <button type="submit" class="form-submit">
+              Upload Video
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 class="footer-title">About Content Hub</h3>
+          <p class="footer-text">A community-driven platform for discovering and sharing high-quality blogs and videos across various topics of interest.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-links">
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Health & Wellness</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Entertainment</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="footer-title">Contact Us</h3>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Content Street, Knowledge City, 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@contenthub.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2023 Content Hub. All rights reserved.</p>
+        <div class="footer-policies">
+          <a href="terms.html">Terms of Service</a>
+          <a href="terms.html">Privacy Policy</a>
+          <a href="terms.html">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
